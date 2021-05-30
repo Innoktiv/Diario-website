@@ -1,0 +1,20 @@
+.logo {
+  font-size: $bigFont;
+  font-family: 'Courier New', Courier, monospace;
+  align-items: baseline;
+}
+
+li.hidden {
+  visibility: hidden;
+}
+
+@include respond-to($bp-medium) {
+  li.hidden {
+    visibility: visible;
+  }
+
+  ul {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
